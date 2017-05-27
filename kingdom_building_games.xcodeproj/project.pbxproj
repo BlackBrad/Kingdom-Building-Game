@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		125D37471ED689B8003C4B5C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 125D37461ED689B8003C4B5C /* main.cpp */; };
+		125D37531ED6A561003C4B5C /* Type_Classes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 125D37511ED6A561003C4B5C /* Type_Classes.cpp */; };
+		12AF1EC21ED7C74800BA84D7 /* Army_Units.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AF1EC01ED7C74800BA84D7 /* Army_Units.cpp */; };
+		12AF1EC61ED7E55700BA84D7 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AF1EC41ED7E55700BA84D7 /* Player.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,14 @@
 /* Begin PBXFileReference section */
 		125D37431ED689B8003C4B5C /* kingdom_building_games */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kingdom_building_games; sourceTree = BUILT_PRODUCTS_DIR; };
 		125D37461ED689B8003C4B5C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		125D37501ED695E0003C4B5C /* tileTypeEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tileTypeEnum.h; sourceTree = "<group>"; };
+		125D37511ED6A561003C4B5C /* Type_Classes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Type_Classes.cpp; sourceTree = "<group>"; };
+		125D37521ED6A561003C4B5C /* Type_Classes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Type_Classes.hpp; sourceTree = "<group>"; };
+		12AF1EC01ED7C74800BA84D7 /* Army_Units.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Army_Units.cpp; sourceTree = "<group>"; };
+		12AF1EC11ED7C74800BA84D7 /* Army_Units.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Army_Units.hpp; sourceTree = "<group>"; };
+		12AF1EC31ED7D6F300BA84D7 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		12AF1EC41ED7E55700BA84D7 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		12AF1EC51ED7E55700BA84D7 /* Player.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				125D37461ED689B8003C4B5C /* main.cpp */,
+				12AF1EC31ED7D6F300BA84D7 /* Game.h */,
+				12AF1EC41ED7E55700BA84D7 /* Player.cpp */,
+				12AF1EC51ED7E55700BA84D7 /* Player.hpp */,
+				125D37501ED695E0003C4B5C /* tileTypeEnum.h */,
+				125D37511ED6A561003C4B5C /* Type_Classes.cpp */,
+				125D37521ED6A561003C4B5C /* Type_Classes.hpp */,
+				12AF1EC01ED7C74800BA84D7 /* Army_Units.cpp */,
+				12AF1EC11ED7C74800BA84D7 /* Army_Units.hpp */,
 			);
 			path = kingdom_building_games;
 			sourceTree = "<group>";
@@ -120,6 +139,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				125D37471ED689B8003C4B5C /* main.cpp in Sources */,
+				12AF1EC21ED7C74800BA84D7 /* Army_Units.cpp in Sources */,
+				125D37531ED6A561003C4B5C /* Type_Classes.cpp in Sources */,
+				12AF1EC61ED7E55700BA84D7 /* Player.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +268,7 @@
 				125D374C1ED689B8003C4B5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
