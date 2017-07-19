@@ -11,19 +11,35 @@
 
 #include "Game.h"
 
+
 void setup(){
+	LoadFile file(FILE_PATH + "load_files.txt");
+	std::string path;
+	std::string tile_name;
+	while (true){
+		path = file.next();
+		if (path.empty()) break;
+		LoadFile temp(FILE_PATH + path);
+		Type tile_temp = temp.parse_into_type();
+		tile_name = tile_temp.get_name();
+		tile_types.insert(std::pair<std::string, Type>(tile_name, tile_temp));
+	}
+	
 	//Initialize the game map by setting all the tiles to an empty field with
 	//no owner
 	for (int i = 0; i < sizeof(game_map) / sizeof(game_map[0]); i++){
 		for (int j = 0; j < sizeof(game_map[0]) / sizeof(game_map[0][0]); j++){
-			Field field;
+			Type field = tile_types.at("Field");
 			game_map[i][j] = field;
 		}
 	}
 	
 	//Place the two players starting villages on the game map
-	game_map[9][9] = Village(ONE);
-	game_map[0][0] = Village(TWO);
+	Type village = tile_types.at("Village");
+	village.set_id(2);
+	game_map[0][0] = village;
+	village.set_id(1);
+	game_map[9][9] = village;
 }
 
 void clear_console(){
@@ -70,10 +86,13 @@ int main(){
 	setup();
 	bool quit = false;
 	while (!quit){
-		Field field;
+		//Field field;
 		//Farm farm(1);
 		//clear_console();
 		draw_map();
+	
+		
+		
 		quit = true;
 	}
 	clean_up();

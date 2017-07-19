@@ -9,11 +9,16 @@
 #ifndef Game_h
 #define Game_h
 
-#include "Type_Classes.hpp"
+#include <map>
+#include "Type.hpp"
 #include "Army_Units.hpp"
 #include "Player.hpp"
+#include "Load_File.hpp"
 
-Type game_map[20][20];
+const std::string FILE_PATH = "game_data/";
+
+Type game_map[10][10];
+std::map<std::string, Type> tile_types;
 
 enum Players{
 	NONE = 0,
@@ -21,6 +26,8 @@ enum Players{
 	TWO = 2,
 	AI = 9
 };
+
+
 
 Player *me = new Player(ONE);
 Player *you = new Player(TWO);

@@ -11,7 +11,6 @@
 
 #include <vector>
 
-#include "tileTypeEnum.h"
 #include "Army_Units.hpp"
 
 /*/////////////////////////////////////////////////
@@ -24,15 +23,17 @@
 */
 class Type{
 private:
-protected:
-	bool has_owner;
+	std::string name;
 	int player_id;//Id of the player that owns the tile
 	std::string representation; //Visiual representation of the tile in the console
-	int income = 0, upkeep = 0, population_size = 0, tax = 0, population_growth = 0;
+	int income = 0, upkeep = 0, tax = 0, population_growth = 0;
 	bool has_trading_hub = false;
 	std::vector<Unit> army; //Vector to store an army on the tile
-	enum tile_type type;
-	long EXTREME_POPULATION, LOW_POPULATION, EXTREME_GROWTH; 
+	long population_size = 0;
+	long EXTREME_POPULATION, LOW_POPULATION, EXTREME_GROWTH;
+	unsigned int defense;
+	std::string requirement;
+	int cost;
 	
 public:
 	Type();
@@ -46,65 +47,24 @@ public:
 	std::vector<Unit> get_army();
 	
 	//Setters
-	void set_population(int population_size);
-	void set_population_growth(int population_growth);
+	void set_name(std::string name);
+	void set_id(unsigned int id);
+	void set_representation(std::string representation);
+	void set_income(int income);
+	void set_upkeep(int upkeep);
+	void set_poulation_size(long population_size);
 	void set_tax(int tax);
-};
-
-class Field: public Type{
-private:
-public:
-	Field();
-	~Field();
-};
-
-// Inherited classes
-
-class Farm: public Type{
-private:
+	void set_population_growth(int population_growth);
+	void set_trading_hub(bool has_trading_hub);
+	void set_extreme_population(long extreme_population);
+	void set_low_population(long low_population);
+	void set_extreme_growth(long extreme_grwoth);
+	void set_defense(int defense);
+	void set_cost(int cost);
+	void set_requirement(std::string requirement);
 	
-public:
-	Farm(int player_id);
-	~Farm();
+	//Getters
+	std::string get_name();
 };
-
-
-
-class Village: public Type{
-private:
-	
-public:
-	Village(int player_id);
-	~Village();
-};
-
-class City: public Type{
-private:
-	
-public:
-	City(int player_id);
-	~City();
-};
-
-
-
-class Fort: public Type{
-private:
-	
-public:
-	Fort(int player_id);
-	~Fort();
-};
-
-
-
-class Castle: public Type{
-private:
-	
-public:
-	Castle(int player_id);
-	~Castle();
-};
-
 
 #endif /* Type_Classes_hpp */

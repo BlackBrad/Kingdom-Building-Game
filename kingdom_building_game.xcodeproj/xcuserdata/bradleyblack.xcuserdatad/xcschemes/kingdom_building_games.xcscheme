@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "125D37421ED689B5003C4B5C"
-               BuildableName = "kingdom_building_games"
-               BlueprintName = "kingdom_building_games"
-               ReferencedContainer = "container:kingdom_building_games.xcodeproj">
+               BuildableName = "kingdom_building_game"
+               BlueprintName = "kingdom_building_game"
+               ReferencedContainer = "container:kingdom_building_game.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "125D37421ED689B5003C4B5C"
-            BuildableName = "kingdom_building_games"
-            BlueprintName = "kingdom_building_games"
-            ReferencedContainer = "container:kingdom_building_games.xcodeproj">
+            BuildableName = "kingdom_building_game"
+            BlueprintName = "kingdom_building_game"
+            ReferencedContainer = "container:kingdom_building_game.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "125D37421ED689B5003C4B5C"
-            BuildableName = "kingdom_building_games"
-            BlueprintName = "kingdom_building_games"
-            ReferencedContainer = "container:kingdom_building_games.xcodeproj">
+            BuildableName = "kingdom_building_game"
+            BlueprintName = "kingdom_building_game"
+            ReferencedContainer = "container:kingdom_building_game.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "125D37421ED689B5003C4B5C"
-            BuildableName = "kingdom_building_games"
-            BlueprintName = "kingdom_building_games"
-            ReferencedContainer = "container:kingdom_building_games.xcodeproj">
+            BuildableName = "kingdom_building_game"
+            BlueprintName = "kingdom_building_game"
+            ReferencedContainer = "container:kingdom_building_game.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

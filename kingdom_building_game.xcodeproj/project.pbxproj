@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1251E92B1F0C895400784649 /* Load_File.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1251E9291F0C895400784649 /* Load_File.cpp */; };
 		125D37471ED689B8003C4B5C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 125D37461ED689B8003C4B5C /* main.cpp */; };
-		125D37531ED6A561003C4B5C /* Type_Classes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 125D37511ED6A561003C4B5C /* Type_Classes.cpp */; };
+		125D37531ED6A561003C4B5C /* Type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 125D37511ED6A561003C4B5C /* Type.cpp */; };
 		12AF1EC21ED7C74800BA84D7 /* Army_Units.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AF1EC01ED7C74800BA84D7 /* Army_Units.cpp */; };
 		12AF1EC61ED7E55700BA84D7 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AF1EC41ED7E55700BA84D7 /* Player.cpp */; };
 /* End PBXBuildFile section */
@@ -26,11 +27,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		125D37431ED689B8003C4B5C /* kingdom_building_games */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kingdom_building_games; sourceTree = BUILT_PRODUCTS_DIR; };
+		1251E9291F0C895400784649 /* Load_File.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Load_File.cpp; sourceTree = "<group>"; };
+		1251E92A1F0C895400784649 /* Load_File.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Load_File.hpp; sourceTree = "<group>"; };
+		125D37431ED689B8003C4B5C /* kingdom_building_game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kingdom_building_game; sourceTree = BUILT_PRODUCTS_DIR; };
 		125D37461ED689B8003C4B5C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		125D37501ED695E0003C4B5C /* tileTypeEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tileTypeEnum.h; sourceTree = "<group>"; };
-		125D37511ED6A561003C4B5C /* Type_Classes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Type_Classes.cpp; sourceTree = "<group>"; };
-		125D37521ED6A561003C4B5C /* Type_Classes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Type_Classes.hpp; sourceTree = "<group>"; };
+		125D37511ED6A561003C4B5C /* Type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Type.cpp; sourceTree = "<group>"; };
+		125D37521ED6A561003C4B5C /* Type.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Type.hpp; sourceTree = "<group>"; };
 		12AF1EC01ED7C74800BA84D7 /* Army_Units.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Army_Units.cpp; sourceTree = "<group>"; };
 		12AF1EC11ED7C74800BA84D7 /* Army_Units.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Army_Units.hpp; sourceTree = "<group>"; };
 		12AF1EC31ED7D6F300BA84D7 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
@@ -52,7 +54,7 @@
 		125D373A1ED689B5003C4B5C = {
 			isa = PBXGroup;
 			children = (
-				125D37451ED689B8003C4B5C /* kingdom_building_games */,
+				125D37451ED689B8003C4B5C /* kingdom_building_game */,
 				125D37441ED689B8003C4B5C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,33 +62,35 @@
 		125D37441ED689B8003C4B5C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				125D37431ED689B8003C4B5C /* kingdom_building_games */,
+				125D37431ED689B8003C4B5C /* kingdom_building_game */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		125D37451ED689B8003C4B5C /* kingdom_building_games */ = {
+		125D37451ED689B8003C4B5C /* kingdom_building_game */ = {
 			isa = PBXGroup;
 			children = (
 				125D37461ED689B8003C4B5C /* main.cpp */,
 				12AF1EC31ED7D6F300BA84D7 /* Game.h */,
 				12AF1EC41ED7E55700BA84D7 /* Player.cpp */,
 				12AF1EC51ED7E55700BA84D7 /* Player.hpp */,
-				125D37501ED695E0003C4B5C /* tileTypeEnum.h */,
-				125D37511ED6A561003C4B5C /* Type_Classes.cpp */,
-				125D37521ED6A561003C4B5C /* Type_Classes.hpp */,
+				125D37511ED6A561003C4B5C /* Type.cpp */,
+				125D37521ED6A561003C4B5C /* Type.hpp */,
 				12AF1EC01ED7C74800BA84D7 /* Army_Units.cpp */,
 				12AF1EC11ED7C74800BA84D7 /* Army_Units.hpp */,
+				1251E9291F0C895400784649 /* Load_File.cpp */,
+				1251E92A1F0C895400784649 /* Load_File.hpp */,
 			);
+			name = kingdom_building_game;
 			path = kingdom_building_games;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		125D37421ED689B5003C4B5C /* kingdom_building_games */ = {
+		125D37421ED689B5003C4B5C /* kingdom_building_game */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 125D374A1ED689B8003C4B5C /* Build configuration list for PBXNativeTarget "kingdom_building_games" */;
+			buildConfigurationList = 125D374A1ED689B8003C4B5C /* Build configuration list for PBXNativeTarget "kingdom_building_game" */;
 			buildPhases = (
 				125D373F1ED689B5003C4B5C /* Sources */,
 				125D37401ED689B5003C4B5C /* Frameworks */,
@@ -96,9 +100,9 @@
 			);
 			dependencies = (
 			);
-			name = kingdom_building_games;
+			name = kingdom_building_game;
 			productName = kingdom_building_games;
-			productReference = 125D37431ED689B8003C4B5C /* kingdom_building_games */;
+			productReference = 125D37431ED689B8003C4B5C /* kingdom_building_game */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +120,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 125D373E1ED689B5003C4B5C /* Build configuration list for PBXProject "kingdom_building_games" */;
+			buildConfigurationList = 125D373E1ED689B5003C4B5C /* Build configuration list for PBXProject "kingdom_building_game" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -128,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				125D37421ED689B5003C4B5C /* kingdom_building_games */,
+				125D37421ED689B5003C4B5C /* kingdom_building_game */,
 			);
 		};
 /* End PBXProject section */
@@ -140,7 +144,8 @@
 			files = (
 				125D37471ED689B8003C4B5C /* main.cpp in Sources */,
 				12AF1EC21ED7C74800BA84D7 /* Army_Units.cpp in Sources */,
-				125D37531ED6A561003C4B5C /* Type_Classes.cpp in Sources */,
+				1251E92B1F0C895400784649 /* Load_File.cpp in Sources */,
+				125D37531ED6A561003C4B5C /* Type.cpp in Sources */,
 				12AF1EC61ED7E55700BA84D7 /* Player.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +257,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		125D373E1ED689B5003C4B5C /* Build configuration list for PBXProject "kingdom_building_games" */ = {
+		125D373E1ED689B5003C4B5C /* Build configuration list for PBXProject "kingdom_building_game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				125D37481ED689B8003C4B5C /* Debug */,
@@ -261,7 +266,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		125D374A1ED689B8003C4B5C /* Build configuration list for PBXNativeTarget "kingdom_building_games" */ = {
+		125D374A1ED689B8003C4B5C /* Build configuration list for PBXNativeTarget "kingdom_building_game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				125D374B1ED689B8003C4B5C /* Debug */,
