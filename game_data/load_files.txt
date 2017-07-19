@@ -1,0 +1,6 @@
+resources/tiles/field.txt
+resources/tiles/farm.txt
+resources/tiles/village.txt
+resources/tiles/city.txt
+resources/tiles/fort.txt
+resources/tiles/castle.txt

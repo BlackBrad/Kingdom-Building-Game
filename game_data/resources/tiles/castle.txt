@@ -1,0 +1,15 @@
+type=Castle
+player_id=0
+representation=C
+income=3500
+upkeep=0
+population_size=0
+population_growth=0
+tax=0
+trading_hub=false
+extreme_population=1000000
+low_population=90000
+extreme_growth=90000
+defense=300
+cost=10000
+requirement=City

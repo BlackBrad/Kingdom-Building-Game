@@ -1,0 +1,15 @@
+type=Fort
+player_id=0
+representation=???????????????
+income=0
+upkeep=500
+population_size=0
+population_growth=0
+tax=0
+trading_hub=false
+extreme_population=0
+low_population=0
+extreme_growth=0
+defense=350
+cost=5000
+requirement=Village
