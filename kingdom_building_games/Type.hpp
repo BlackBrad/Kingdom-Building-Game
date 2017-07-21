@@ -26,10 +26,10 @@ private:
 	std::string name;
 	int player_id;//Id of the player that owns the tile
 	std::string representation; //Visiual representation of the tile in the console
-	int income = 0, upkeep = 0, tax = 0, population_growth = 0;
-	bool has_trading_hub = false;
+	int income, upkeep, tax, population_growth ;
+	bool has_trading_hub;
 	std::vector<Unit> army; //Vector to store an army on the tile
-	long population_size = 0;
+	long population_size;
 	long EXTREME_POPULATION, LOW_POPULATION, EXTREME_GROWTH;
 	unsigned int defense;
 	std::string requirement;

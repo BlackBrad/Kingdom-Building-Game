@@ -15,12 +15,3 @@ Unit::Unit(){
 Unit::~Unit(){
 	
 }
-
-Soldier::Soldier(){
-	
-}
-
-Soldier::~Soldier(){
-	std::cout<<name<<std::endl;
-}
-

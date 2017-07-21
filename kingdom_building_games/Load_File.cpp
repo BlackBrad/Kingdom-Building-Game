@@ -9,7 +9,7 @@
 #include "Load_File.hpp"
 
 LoadFile::LoadFile(){
-	//Empty constructor
+	is_loaded = false;
 }
 
 LoadFile::~LoadFile(){

@@ -22,7 +22,7 @@ private:
 	std::map<std::string, Type> type_data;
 	std::vector<std::string> file_data;
 	
-	bool is_loaded = false;
+	bool is_loaded;
 	bool check_is_open();
 	
 public:

@@ -18,20 +18,4 @@ public:
 	~Unit();
 };
 
-class Soldier: public Unit{
-private:
-	std::string name = "Bill";
-	
-public:
-	Soldier();
-	~Soldier();
-};
-
-class Knight: public Unit{
-private:
-public:
-	Knight();
-	~Knight();
-};
-
 #endif /* Army_Units_hpp */
