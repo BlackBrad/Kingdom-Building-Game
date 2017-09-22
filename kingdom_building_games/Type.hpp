@@ -10,6 +10,7 @@
 #define Type_Classes_hpp
 
 #include <vector>
+#include <iostream>
 
 #include "Army_Units.hpp"
 
@@ -25,15 +26,15 @@ class Type{
 private:
 	std::string name;
 	int player_id;//Id of the player that owns the tile
-	std::string representation; //Visiual representation of the tile in the console
+	std::string representation; //Visual representation of the tile in the console
 	int income, upkeep, tax, population_growth ;
-	bool has_trading_hub;
 	std::vector<Unit> army; //Vector to store an army on the tile
 	long population_size;
 	long EXTREME_POPULATION, LOW_POPULATION, EXTREME_GROWTH;
 	unsigned int defense;
 	std::string requirement;
 	int cost;
+	bool has_trading_hub;
 	
 public:
 	Type();
@@ -55,16 +56,19 @@ public:
 	void set_poulation_size(long population_size);
 	void set_tax(int tax);
 	void set_population_growth(int population_growth);
-	void set_trading_hub(bool has_trading_hub);
 	void set_extreme_population(long extreme_population);
 	void set_low_population(long low_population);
 	void set_extreme_growth(long extreme_grwoth);
 	void set_defense(int defense);
 	void set_cost(int cost);
 	void set_requirement(std::string requirement);
+	void set_trading_hub(bool has_trading_hub);
 	
 	//Getters
 	std::string get_name();
 };
+
+//Abstract version of Type
+
 
 #endif /* Type_Classes_hpp */

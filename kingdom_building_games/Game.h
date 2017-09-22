@@ -32,4 +32,6 @@ enum Players{
 Player *me = new Player(ONE);
 Player *you = new Player(TWO);
 
+Player *current = me;
+
 #endif /* Game_h */

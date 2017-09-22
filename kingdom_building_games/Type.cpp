@@ -6,12 +6,10 @@
 //  Copyright © 2017 Bradley Black. All rights reserved.
 //
 
-#include <iostream>
-
 #include "Type.hpp"
 
 Type::Type(){
-	//std::cout<<"Type constructor!!!"<<std::endl;
+	player_id = 0;
 }
 
 Type::~Type(){
@@ -90,9 +88,15 @@ std::string Type::get_representation(){
 	return std::to_string(player_id) + representation;
 }
 
-/*
+
 void Type::print_tile_info(){
-	
+	std::string owner, trading_hub;
+	if (player_id == 1) owner = "One";
+	else if (player_id == 2) owner = "Two";
+	else owner = "No Owner";
+	if (has_trading_hub) trading_hub = "Has a trading hub";
+	else trading_hub = "Does not have a trading hub";
+	std:printf("Tile Info\n*********\n\nOwner: %s\n%s\nPopulation: %ld\n", owner.c_str(), trading_hub.c_str(), population_size);
 }
-*/
+
 

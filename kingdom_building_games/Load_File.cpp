@@ -31,9 +31,6 @@ LoadFile::LoadFile(std::string file_path){
 			file_data.push_back(temp);
 			
 		}
-		for (int i = 0; i < file_data.size(); i++){
-			std::cout<<file_data[i]<<std::endl;
-		}
 	}
 }
 
@@ -54,7 +51,7 @@ bool LoadFile::check_is_open(){
 }
 
 Type LoadFile::parse_into_type(){
-	Type temp;
+	Type *temp = new Type();
 	
 	for (int i = 0; i < file_data.size(); i++){
 		unsigned long index = file_data[i].find('=');//The index where the name and value are split.
@@ -62,25 +59,28 @@ Type LoadFile::parse_into_type(){
 		file_data[i].erase(0, index + 1);
 		std::string value = file_data[i].substr(0);
 		
-		if (name == "type") temp.set_name(value);
-		else if(name == "player_id") temp.set_id(std::stoi(value));
-		else if(name == "representation") temp.set_representation(value);
-		else if(name == "income") temp.set_income(std::stoi(value));
-		else if(name == "upkeep") temp.set_upkeep(std::stoi(value));
-		else if(name == "population_size") temp.set_poulation_size(std::stoi(value));
-		else if(name == "population_growth") temp.set_population_growth(std::stoi(value));
-		else if(name == "tax") temp.set_tax(std::stoi(value));
-		else if(name == "trading_hub"){
-			if (value == "true") temp.set_trading_hub(true);
-			else temp.set_trading_hub(false);
+		if (name == "type") temp->set_name(value);
+		else if(name == "player_id") temp->set_id(std::stoi(value));
+		else if(name == "representation") temp->set_representation(value);
+		else if(name == "income") temp->set_income(std::stoi(value));
+		else if(name == "upkeep") temp->set_upkeep(std::stoi(value));
+		else if(name == "population_size"){
+			temp->set_poulation_size(std::stoi(value));
+			std::cout<<"pop: "<<value<<std::endl;
 		}
-		else if (name == "extreme_population") temp.set_extreme_population(std::stol(value));
-		else if (name == "low_population") temp.set_low_population(std::stol(value));
-		else if (name == "extreme_growth") temp.set_extreme_growth(std::stol(value));
-		else if (name == "defense") temp.set_defense(std::stoi(value));
-		else if (name == "cost") temp.set_cost(stoi(value));
-		else if (name == "requirement") temp.set_requirement(value);
+		else if(name == "population_growth") temp->set_population_growth(std::stoi(value));
+		else if(name == "tax") temp->set_tax(std::stoi(value));
+		else if(name == "trading_hub"){
+			if (value == "true") temp->set_trading_hub(true);
+			else temp->set_trading_hub(false);
+		}
+		else if (name == "extreme_population") temp->set_extreme_population(std::stol(value));
+		else if (name == "low_population") temp->set_low_population(std::stol(value));
+		else if (name == "extreme_growth") temp->set_extreme_growth(std::stol(value));
+		else if (name == "defense") temp->set_defense(std::stoi(value));
+		else if (name == "cost") temp->set_cost(stoi(value));
+		else if (name == "requirement") temp->set_requirement(value);
 	}
 	
-	return temp;
+	return *temp;
 }

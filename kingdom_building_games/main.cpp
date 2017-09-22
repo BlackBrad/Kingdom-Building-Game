@@ -36,9 +36,9 @@ void setup(){
 	
 	//Place the two players starting villages on the game map
 	Type village = tile_types.at("Village");
-	village.set_id(2);
+	village.set_id(TWO);
 	game_map[0][0] = village;
-	village.set_id(1);
+	village.set_id(ONE);
 	game_map[9][9] = village;
 }
 
@@ -77,6 +77,40 @@ void draw_map(){
 		std::cout<<"|\n";
 };
 
+Type get_tile(std::string coordinates){
+	int x, y, index;
+	index = coordinates.find(',');
+	x = std::stoi(coordinates.substr(0, index));
+	y = std::stoi(coordinates.substr(index + 1, -1));
+	return game_map[x][y];
+}
+
+void view_tile(std::string coordinates){
+	get_tile(coordinates).print_tile_info();
+	std::printf("Press [RETURN] to continue: ");
+	std::cin.ignore();
+}
+
+int get_option(){
+	std::string option;
+	std::cout<<"What would you like to do?"<<std::endl;
+	std::printf("?");
+	getline(std::cin, option);
+	for (auto & c: option){
+		c = std::toupper(c);
+	}
+	
+	if (option == "QUIT" || option == "EXIT") return -1;
+	else{
+		std::string temp;
+		int index = option.find(' ');
+		temp = option.substr(0, index);
+		if (temp == "VIEW") view_tile(option.substr(index + 1, -1));
+	}
+	std::cout<<"The option entered was: "<<option<<std::endl;
+	return 0;
+}
+
 void clean_up(){
 	delete me;
 	delete you;
@@ -86,14 +120,10 @@ int main(){
 	setup();
 	bool quit = false;
 	while (!quit){
-		//Field field;
-		//Farm farm(1);
+
 		//clear_console();
 		draw_map();
-	
-		
-		
-		quit = true;
+		if (get_option() == -1) quit = true;
 	}
 	clean_up();
 	return 0;
