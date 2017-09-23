@@ -27,4 +27,4 @@ Village.o: Village.cpp Village.hpp
 	$(CC) $(FLAGS) Village.cpp
 
 clean:
-	rm *.o Tile_Types/*.o kingdom
+	rm *.o kingdom  #Removes all object files and the executable if user types 'make clean'
