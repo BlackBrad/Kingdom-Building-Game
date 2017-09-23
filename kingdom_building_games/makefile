@@ -28,7 +28,3 @@ Village.o: Village.cpp Village.hpp
 
 clean:
 	rm *.o Tile_Types/*.o kingdom
-
-
-
-g++ -std=c++11 main.cpp Load_File.cpp Army_Units.cpp Player.cpp Tile_Types/Type.cpp Tile_Types/Farm.cpp Tile_Types/Field.cpp Tile_Types/Village.cpp
