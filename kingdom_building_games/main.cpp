@@ -13,17 +13,7 @@
 
 
 void setup(){
-	LoadFile file(FILE_PATH + "load_files.txt");
-	std::string path;
-	std::string tile_name;
-	while (true){
-		path = file.next();
-		if (path.empty()) break;
-		LoadFile temp(FILE_PATH + path);
-		Type tile_temp = temp.parse_into_type();
-		tile_name = tile_temp.get_name();
-		tile_types.insert(std::pair<std::string, Type>(tile_name, tile_temp));
-	}
+	tile_types = File_Handler::LoadDataToMap(FILE_PATH + "load_files.txt");
 	
 	//Initialize the game map by setting all the tiles to an empty field with
 	//no owner
@@ -67,14 +57,6 @@ void draw_map(){
 		border_count++;
 	}
 	std::cout<<"\n";
-	
-	if (count > 10) std::cout<<"  ";
-	else std::cout<<" ";
-	for (int k = 0; k < sizeof(game_map)/sizeof(game_map[0]); k++){
-		if (k < 10) std::cout<<"| "<<k;
-		else std::cout<<"|"<<k;
-	}
-		std::cout<<"|\n";
 };
 
 Type get_tile(std::string coordinates){

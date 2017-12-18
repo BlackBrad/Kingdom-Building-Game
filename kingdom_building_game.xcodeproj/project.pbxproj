@@ -11,10 +11,13 @@
 		123912141F75B15C00BF7FB7 /* Type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1239120E1F75B15C00BF7FB7 /* Type.cpp */; };
 		123912151F75B15C00BF7FB7 /* Village.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123912101F75B15C00BF7FB7 /* Village.cpp */; };
 		123912171F75B2F300BF7FB7 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 123912161F75B2F300BF7FB7 /* makefile */; };
-		1251E92B1F0C895400784649 /* Load_File.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1251E9291F0C895400784649 /* Load_File.cpp */; };
+		1251E92B1F0C895400784649 /* File_Handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1251E9291F0C895400784649 /* File_Handler.cpp */; };
 		125D37471ED689B8003C4B5C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 125D37461ED689B8003C4B5C /* main.cpp */; };
 		12AF1EC61ED7E55700BA84D7 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AF1EC41ED7E55700BA84D7 /* Player.cpp */; };
 		12B26B8E1F75A69100A390EC /* Army_Units.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12B26B8C1F75A69000A390EC /* Army_Units.cpp */; };
+		12E8E80D1F85F15B00868DD0 /* City.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E80B1F85F15B00868DD0 /* City.cpp */; };
+		12E8E8101F85F22C00868DD0 /* Castle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E80E1F85F22C00868DD0 /* Castle.cpp */; };
+		12E8E8131F86C3DE00868DD0 /* Farm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E8111F86C3DE00868DD0 /* Farm.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,8 +41,8 @@
 		123912101F75B15C00BF7FB7 /* Village.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Village.cpp; sourceTree = "<group>"; };
 		123912111F75B15C00BF7FB7 /* Village.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Village.hpp; sourceTree = "<group>"; };
 		123912161F75B2F300BF7FB7 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
-		1251E9291F0C895400784649 /* Load_File.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Load_File.cpp; sourceTree = "<group>"; };
-		1251E92A1F0C895400784649 /* Load_File.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Load_File.hpp; sourceTree = "<group>"; };
+		1251E9291F0C895400784649 /* File_Handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = File_Handler.cpp; sourceTree = "<group>"; };
+		1251E92A1F0C895400784649 /* File_Handler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = File_Handler.hpp; sourceTree = "<group>"; };
 		125D37431ED689B8003C4B5C /* kingdom_building_game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kingdom_building_game; sourceTree = BUILT_PRODUCTS_DIR; };
 		125D37461ED689B8003C4B5C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		12AF1EC31ED7D6F300BA84D7 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
@@ -47,6 +50,12 @@
 		12AF1EC51ED7E55700BA84D7 /* Player.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 		12B26B8C1F75A69000A390EC /* Army_Units.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Army_Units.cpp; sourceTree = "<group>"; };
 		12B26B8D1F75A69100A390EC /* Army_Units.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Army_Units.hpp; sourceTree = "<group>"; };
+		12E8E80B1F85F15B00868DD0 /* City.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = City.cpp; sourceTree = "<group>"; };
+		12E8E80C1F85F15B00868DD0 /* City.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = City.hpp; sourceTree = "<group>"; };
+		12E8E80E1F85F22C00868DD0 /* Castle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Castle.cpp; sourceTree = "<group>"; };
+		12E8E80F1F85F22C00868DD0 /* Castle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Castle.hpp; sourceTree = "<group>"; };
+		12E8E8111F86C3DE00868DD0 /* Farm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Farm.cpp; sourceTree = "<group>"; };
+		12E8E8121F86C3DE00868DD0 /* Farm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Farm.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +95,20 @@
 				12AF1EC51ED7E55700BA84D7 /* Player.hpp */,
 				12B26B8C1F75A69000A390EC /* Army_Units.cpp */,
 				12B26B8D1F75A69100A390EC /* Army_Units.hpp */,
-				1239120C1F75B15C00BF7FB7 /* Field.cpp */,
-				1239120D1F75B15C00BF7FB7 /* Field.hpp */,
 				1239120E1F75B15C00BF7FB7 /* Type.cpp */,
 				1239120F1F75B15C00BF7FB7 /* Type.hpp */,
+				1239120C1F75B15C00BF7FB7 /* Field.cpp */,
+				1239120D1F75B15C00BF7FB7 /* Field.hpp */,
 				123912101F75B15C00BF7FB7 /* Village.cpp */,
 				123912111F75B15C00BF7FB7 /* Village.hpp */,
-				1251E9291F0C895400784649 /* Load_File.cpp */,
-				1251E92A1F0C895400784649 /* Load_File.hpp */,
+				12E8E80B1F85F15B00868DD0 /* City.cpp */,
+				12E8E80C1F85F15B00868DD0 /* City.hpp */,
+				12E8E80E1F85F22C00868DD0 /* Castle.cpp */,
+				12E8E80F1F85F22C00868DD0 /* Castle.hpp */,
+				12E8E8111F86C3DE00868DD0 /* Farm.cpp */,
+				12E8E8121F86C3DE00868DD0 /* Farm.hpp */,
+				1251E9291F0C895400784649 /* File_Handler.cpp */,
+				1251E92A1F0C895400784649 /* File_Handler.hpp */,
 				123912161F75B2F300BF7FB7 /* makefile */,
 			);
 			name = kingdom_building_game;
@@ -157,12 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E8E80D1F85F15B00868DD0 /* City.cpp in Sources */,
 				123912151F75B15C00BF7FB7 /* Village.cpp in Sources */,
 				125D37471ED689B8003C4B5C /* main.cpp in Sources */,
-				1251E92B1F0C895400784649 /* Load_File.cpp in Sources */,
+				1251E92B1F0C895400784649 /* File_Handler.cpp in Sources */,
 				12B26B8E1F75A69100A390EC /* Army_Units.cpp in Sources */,
 				12AF1EC61ED7E55700BA84D7 /* Player.cpp in Sources */,
 				123912131F75B15C00BF7FB7 /* Field.cpp in Sources */,
+				12E8E8101F85F22C00868DD0 /* Castle.cpp in Sources */,
+				12E8E8131F86C3DE00868DD0 /* Farm.cpp in Sources */,
 				123912171F75B2F300BF7FB7 /* makefile in Sources */,
 				123912141F75B15C00BF7FB7 /* Type.cpp in Sources */,
 			);

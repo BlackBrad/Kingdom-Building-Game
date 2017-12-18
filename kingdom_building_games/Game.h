@@ -13,7 +13,7 @@
 #include "Type.hpp"
 #include "Army_Units.hpp"
 #include "Player.hpp"
-#include "Load_File.hpp"
+#include "File_Handler.hpp"
 
 const std::string FILE_PATH = "game_data/";
 

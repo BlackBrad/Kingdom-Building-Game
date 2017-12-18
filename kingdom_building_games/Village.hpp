@@ -12,11 +12,23 @@
 #include "Type.hpp"
 
 class Village : public Type{
-private:
-	bool has_trading_hub;
+protected:
+	long population_size;
+	long EXTREME_POPULATION, LOW_POPULATION, EXTREME_GROWTH;
+	int income, upkeep, tax, population_growth;
 	
 public:
-	void set_trading_hub(bool has_trading_hub);
+	Village();
+	~Village();
+	
+	void print_tile_info(int player_id);
+	void calculate_population();
+	void calculate_income();
+	
+	//Setters
+	void setTax(int tax){
+		this->tax = tax;
+	}
 };
 
 #endif /* Village_hpp */

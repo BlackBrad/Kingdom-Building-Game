@@ -31,52 +31,44 @@ void Type::set_representation(std::string representation){
 	this->representation = representation;
 }
 
-void Type::set_income(int income){
-	this->income = income;
-}
-
-void Type::set_upkeep(int upkeep){
-	this->upkeep = upkeep;
-}
-
-void Type::set_poulation_size(long population_size){
-	this->population_size = population_size;
-}
-
-void Type::set_tax(int tax){
-	this->tax = tax;
-}
-
-void Type::set_population_growth(int population_growth){
-	this->population_growth = population_growth;
-}
-
-void Type::set_trading_hub(bool has_trading_hub){
-	this->has_trading_hub = has_trading_hub;
-}
-
-void Type::set_extreme_population(long extreme_population){
-	this->EXTREME_POPULATION = extreme_population;
-}
-
-void Type::set_low_population(long low_population){
-	this->LOW_POPULATION = low_population;
-}
-
-void Type::set_extreme_growth(long extreme_grwoth){
-	this->EXTREME_GROWTH = extreme_grwoth;
-}
-
-void Type::set_defense(int defense){
-	this->defense = defense;
-}
-
 void Type::set_cost(int cost){
 	this->cost = cost;
 }
 
 void Type::set_requirement(std::string requirement){
 	this->requirement = requirement;
+}
+
+void Type::set_income(int income){
+	this->income = income;
+}
+
+void Type::set_tax(int tax){
+	this->tax = tax;
+}
+
+void Type::set_upkeep(int upkeep){
+	this->upkeep = upkeep;
+}
+
+void Type::set_population(int population){
+	this->population = population;
+}
+
+void Type::set_popGrowth(int pop_growth){
+	this->pop_growth = pop_growth;
+}
+
+void Type::set_extremePop(int extreme_population){
+	this->extreme_population = extreme_population;
+}
+
+void Type::set_defense(int defense){
+	this->defense = defense;
+}
+
+void Type::set_tradingHub(bool trading_hub){
+	this->trading_hub = trading_hub;
 }
 
 //Getters
@@ -90,13 +82,11 @@ std::string Type::get_representation(){
 
 
 void Type::print_tile_info(){
-	std::string owner, trading_hub;
+	std::string owner;
 	if (player_id == 1) owner = "One";
 	else if (player_id == 2) owner = "Two";
 	else owner = "No Owner";
-	if (has_trading_hub) trading_hub = "Has a trading hub";
-	else trading_hub = "Does not have a trading hub";
-	std:printf("Tile Info\n*********\n\nOwner: %s\n%s\nPopulation: %ld\n", owner.c_str(), trading_hub.c_str(), population_size);
+	std::cout<<"Tile Info*********\n"<<name<<"\n"<<"Owner: "<<owner<<std::endl;
 }
 
 
