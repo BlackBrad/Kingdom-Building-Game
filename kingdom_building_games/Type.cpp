@@ -81,12 +81,12 @@ std::string Type::get_representation(){
 }
 
 
-void Type::print_tile_info(){
+void Type::print_tile_info(Player current){
 	std::string owner;
-	if (player_id == 1) owner = "One";
-	else if (player_id == 2) owner = "Two";
+	if (current == ONE) owner = "One";
+	else if (current == TWO) owner = "Two";
 	else owner = "No Owner";
-	std::cout<<"Tile Info*********\n"<<name<<"\n"<<"Owner: "<<owner<<std::endl;
+	std::cout<<"Tile Info\n*********\n"<<name<<"\n"<<"Owner: "<<owner<<std::endl;
 }
 
 

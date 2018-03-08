@@ -18,3 +18,9 @@ Player::Player(int player_id){
 Player::~Player(){
 	std::cout<<"ID: "<<id<<std::endl;
 }
+
+//Operator overloads
+bool Player::operator==(int enum_id){
+	if (id == enum_id) return true;
+	return false;
+}

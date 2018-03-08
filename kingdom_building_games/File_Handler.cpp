@@ -33,7 +33,6 @@ std::map<std::string, Type> File_Handler::LoadDataToMap(std::string load_file){
 	while (!files_to_load.eof()){
 		std::string file_name;
 		files_to_load>>file_name;
-		std::cout<<file_name;
 		
 		std::ifstream data_file;
 		data_file.open("game_data/" + file_name);

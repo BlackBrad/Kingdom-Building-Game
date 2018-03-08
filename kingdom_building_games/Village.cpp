@@ -13,7 +13,7 @@ Village::Village(){
 }
 
 void Village::print_tile_info(int player_id){
-	Type::print_tile_info(); //Call print_tile_info from the base class Type
+	Type::print_tile_info(player_id); //Call print_tile_info from the base class Type
 	
 	std::cout<<"Population: "<<population_size<<std::endl;
 	if (player_id == this->player_id){

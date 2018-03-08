@@ -13,6 +13,7 @@
 #include <iostream>
 
 #include "Army_Units.hpp"
+#include "Player.hpp"
 
 /*/////////////////////////////////////////////////
 // Class Type
@@ -39,7 +40,7 @@ public:
 	Type();
 	~Type();
 	void add_army(std::vector<Unit> *army);
-	void print_tile_info();
+	void print_tile_info(Player current);
 	int get_owner();
 	
 	//Getters

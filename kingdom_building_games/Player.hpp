@@ -11,6 +11,12 @@
 
 #include <iostream>
 
+enum PLAYERS{
+	NONE = 0,
+	ONE = 1,
+	TWO = 2,
+	AI = 9
+};
 
 class Player{
 private:
@@ -21,6 +27,9 @@ public:
 	
 	~Player();
 	static int new_id();
+	
+	//Operator overloads
+	bool operator==(int enum_id);
 };
 
 #endif /* Player_hpp */
